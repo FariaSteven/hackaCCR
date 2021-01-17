@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Principal</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="./aceitarAtividade.js"></script>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <!-- barra de navegação -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar-spy">
+            <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../public/index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../public/index.html">Atividades</a>
+                    </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../public/niveis.html">Níveis</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../public/perfilDoUsuario.html">Perfil</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Modal -->
+
+      <!-- Modal -->
+        <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Parabéns, pontos registrados!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-button">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+        </div>
+
+<div class="container-fluid">
+
+    <div class="principal-div-input">
+    
+        <!-- Atividades -->
+        <h3 class='atividades-secao-titulo'>Educacional</h3>
+
+        <div class="container-atividade">
+            <div class="card-atividade card-cor-secao1">
+                <div class="frame-imagem"></div>
+                <div class="card-informações">
+                    <h2 class="card-titulo">Olímpiadas de Matemática</h2>
+                    <ul class="card-atributos"></ul>
+                </div>
+                <button type="button" class="btn btn-primary button-pontos" onclick="aceitarAtividade(10)" data-toggle="modal" data-target="#modalExemplo">
+                    + 70 pontos
+                </button>
+            </div>
+
+            <div class="card-atividade card-cor-secao1">
+                <div class="frame-imagem"></div>
+                <div class="card-informações">
+                    <h2 class="card-titulo">Curso de finanças pessoais</h2>
+                    <ul class="card-atributos">
+                    </ul>
+                </div>
+                <button type="button" class="btn btn-primary button-pontos " onclick="aceitarAtividade(35)" data-toggle="modal" data-target="#modalExemplo">
+                    + 35 pontos
+                </button>
+            </div>
+
+            <div class="card-atividade card-cor-secao1">
+                <div class="frame-imagem"></div>
+                <div class="card-informações">
+                    <h2 class="card-titulo">Educação no trânsito</h2>
+                    <ul class="card-atributos"></ul>
+                </div>
+                <button type="button" class="btn btn-primary button-pontos" onclick="aceitarAtividade(5)" data-toggle="modal" data-target="#modalExemplo">
+                    + 25 pontos
+                </button>
+            </div>
+
+            <div class="card-atividade card-cor-secao1">
+                <div class="frame-imagem"></div>
+                <div class="card-informações">
+                    <h2 class="card-titulo">Olímpiadas de Física</h2>
+                    <ul class="card-atributos"></ul>
+                </div>
+                <button type="button" class="btn btn-primary button-pontos" onclick="aceitarAtividade(10)" data-toggle="modal" data-target="#modalExemplo">
+                    + 80 pontos
+                </button>
+            </div>
+
+            <div class="card-atividade card-cor-secao1">
+                <div class="frame-imagem"></div>
+                <div class="card-informações">
+                    <h2 class="card-titulo">Participação no Enem</h2>
+                    <ul class="card-atributos"></ul>
+                </div>
+                <button type="button" class="btn btn-primary button-pontos" onclick="aceitarAtividade(150)" data-toggle="modal" data-target="#modalExemplo">
+                    + 150 pontos
+                </button>
+            </div>
+        </div>
+
+        <h3 class='atividades-secao-titulo'>Cultural</h3>
+
+        <div class="container-atividade">
+            <div class="card-atividade card-cor-secao2">
+                <div class="frame-imagem"></div>
+                <div class="card-informações">
+                    <h2 class="card-titulo">Participação em Grupo de teato</h2>
+                    <ul class="card-atributos"></ul>
+                </div>
+                <button type="button" class="btn btn-primary button-pontos" onclick="aceitarAtividade(70)" data-toggle="modal" data-target="#modalExemplo">
+                    + 70 pontos
+                </button>
+            </div>
+
+            <div class="card-atividade card-cor-secao2">
+                <div class="frame-imagem"></div>
+                <div class="card-informações">
+                    <h2 class="card-titulo">Participação em grupo de dança</h2>
+                    <ul class="card-atributos">
+                    </ul>
+                </div>
+                <button type="button" class="btn btn-primary button-pontos " onclick="aceitarAtividade(85)" data-toggle="modal" data-target="#modalExemplo">
+                    + 85 pontos
+                </button>
+            </div>
+
+            <div class="card-atividade card-cor-secao2">
+                <div class="frame-imagem"></div>
+                <div class="card-informações">
+                    <h2 class="card-titulo">Ida ao Teatro</h2>
+                    <ul class="card-atributos"></ul>
+                </div>
+                <button type="button" class="btn btn-primary button-pontos" onclick="aceitarAtividade(65)" data-toggle="modal" data-target="#modalExemplo">
+                    + 65 pontos
+                </button>
+            </div>
+
+            <div class="card-atividade card-cor-secao2">
+                <div class="frame-imagem"></div>
+                <div class="card-informações">
+                    <h2 class="card-titulo">Visita ao Museu</h2>
+                    <ul class="card-atributos"></ul>
+                </div>
+                <button type="button" class="btn btn-primary button-pontos" onclick="aceitarAtividade(60)" data-toggle="modal" data-target="#modalExemplo">
+                    + 60 pontos
+                </button>
+            </div>
+
+            <div class="card-atividade card-cor-secao2">
+                <div class="frame-imagem"></div>
+                <div class="card-informações">
+                    <h2 class="card-titulo">Participação em oficina no SENAC</h2>
+                    <ul class="card-atributos"></ul>
+                </div>
+                <button type="button" class="btn btn-primary button-pontos" onclick="aceitarAtividade(150)" data-toggle="modal" data-target="#modalExemplo">
+                    + 150 pontos
+                </button>
+            </div>
+        </div>
+
+        <h3 class='atividades-secao-titulo'>Esportes</h3>
+
+        <div class="container-atividade">
+            <div class="card-atividade card-cor-secao3">
+                <div class="frame-imagem"></div>
+                <div class="card-informações">
+                    <h2 class="card-titulo">Time de ping pong</h2>
+                    <ul class="card-atributos"></ul>
+                </div>
+                <button type="button" class="btn btn-primary button-pontos" onclick="aceitarAtividade(40)" data-toggle="modal" data-target="#modalExemplo">
+                    + 40 pontos
+                </button>
+            </div>
+
+            <div class="card-atividade card-cor-secao3">
+                <div class="frame-imagem"></div>
+                <div class="card-informações">
+                    <h2 class="card-titulo">Time de futsall</h2>
+                    <ul class="card-atributos">
+                    </ul>
+                </div>
+                <button type="button" class="btn btn-primary button-pontos " onclick="aceitarAtividade(35)" data-toggle="modal" data-target="#modalExemplo">
+                    + 35 pontos
+                </button>
+            </div>
+
+            <div class="card-atividade card-cor-secao3">
+                <div class="frame-imagem"></div>
+                <div class="card-informações">
+                    <h2 class="card-titulo">Time de xadrez</h2>
+                    <ul class="card-atributos"></ul>
+                </div>
+                <button type="button" class="btn btn-primary button-pontos" onclick="aceitarAtividade(35)" data-toggle="modal" data-target="#modalExemplo">
+                    + 35 pontos
+                </button>
+            </div>
+
+            <div class="card-atividade card-cor-secao3">
+                <div class="frame-imagem"></div>
+                <div class="card-informações">
+                    <h2 class="card-titulo">Time de judô</h2>
+                    <ul class="card-atributos"></ul>
+                </div>
+                <button type="button" class="btn btn-primary button-pontos" onclick="aceitarAtividade(40)" data-toggle="modal" data-target="#modalExemplo">
+                    + 40 pontos
+                </button>
+            </div>
+
+            <div class="card-atividade card-cor-secao3">
+                <div class="frame-imagem"></div>
+                <div class="card-informações">
+                    <h2 class="card-titulo">Time de vôlei</h2>
+                    <ul class="card-atributos"></ul>
+                </div>
+                <button type="button" class="btn btn-primary button-pontos" onclick="aceitarAtividade(90)" data-toggle="modal" data-target="#modalExemplo">
+                    + 90 pontos
+                </button>
+            </div>
+        </div>
+        <h3 class='atividades-secao-titulo'>Profissionalizantes</h3>
+
+        <div class="container-atividade">
+            <div class="card-atividade card-cor-secao4">
+                <div class="frame-imagem"></div>
+                <div class="card-informações">
+                    <h2 class="card-titulo">Curso pacote office</h2>
+                    <ul class="card-atributos"></ul>
+                </div>
+                <button type="button" class="btn btn-primary button-pontos" onclick="aceitarAtividade(70)" data-toggle="modal" data-target="#modalExemplo">
+                    + 70 pontos
+                </button>
+            </div>
+
+            <div class="card-atividade card-cor-secao4">
+                <div class="frame-imagem"></div>
+                <div class="card-informações">
+                    <h2 class="card-titulo">Curso de programação</h2>
+                    <ul class="card-atributos">
+                    </ul>
+                </div>
+                <button type="button" class="btn btn-primary button-pontos " onclick="aceitarAtividade(90)" data-toggle="modal" data-target="#modalExemplo">
+                    + 90 pontos
+                </button>
+            </div>
+
+            <div class="card-atividade card-cor-secao4">
+                <div class="frame-imagem"></div>
+                <div class="card-informações">
+                    <h2 class="card-titulo">Curso técnico</h2>
+                    <ul class="card-atributos"></ul>
+                </div>
+                <button type="button" class="btn btn-primary button-pontos" onclick="aceitarAtividade(175)" data-toggle="modal" data-target="#modalExemplo">
+                    + 170 pontos
+                </button>
+            </div>
+
+            <div class="card-atividade card-cor-secao4">
+                <div class="frame-imagem"></div>
+                <div class="card-informações">
+                    <h2 class="card-titulo">Cursos do Senai</h2>
+                    <ul class="card-atributos"></ul>
+                </div>
+                <button type="button" class="btn btn-primary button-pontos" onclick="aceitarAtividade(110)" data-toggle="modal" data-target="#modalExemplo">
+                    + 110 pontos
+                </button>
+            </div>
+
+            <div class="card-atividade card-cor-secao4">
+                <div class="frame-imagem"></div>
+                <div class="card-informações">
+                    <h2 class="card-titulo">Curso de Excel Avançado</h2>
+                    <ul class="card-atributos"></ul>
+                </div>
+                <button type="button" class="btn btn-primary button-pontos" onclick="aceitarAtividade(65)" data-toggle="modal" data-target="#modalExemplo">
+                    + 65 pontos
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

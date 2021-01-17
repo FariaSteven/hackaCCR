@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.background {
+    background-image: url('../light-bulb-ideas-creative-diagram-concept.jpg'); 
+}
+
+.perfilUsuario {
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* margin-top: 30px; */
+}
+
+.dadosDoUsuario {
+    text-align: center;
+
+    background-color: rgba(0, 0, 0, 0.445);
+
+    padding: 20px;
+
+    border-radius: 8px;
+}
+
+.nome {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: white;
+}
+
+.dados {
+    width: 100%;
+    height: 100%;
+
+    margin-top: 15px;
+
+    outline: 0;
+    border: 0 none;
+    /* border: 1px solid; */
+}
+
+.editCircle {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 80px;
+    margin-left: 10px;
+}
+
+.editIcon {
+    width: 30px;
+    height: 30px;
+}
+
+.imgPerfil {
+    width: 96px;
+    height: 96px;
+
+    border: 2px rgb(0, 0, 0) solid;
+    border-radius: 50%;
+}
+
+.progressRanking {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+
+    margin-bottom: 10px;
+}
+
+.progress {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.dados:nth-child(2) {
+    margin-top: 20px;
+}
+
+.dados {
+    width: 500px;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 8px;
+    
+    margin-bottom: 10px;
+
+    outline: 0;
+}
+
+.dados:focus {
+    box-shadow: 0 0 0 0;
+    border: 1 none;
+    outline: 0;
+}
+
+strong {
+    font-family: 'Roboto', sans-serif;
+
+    font-weight: 700;
+
+    font-size: medium;
+}
+  
+.active, .collapsible:hover {
+    background-color: #fff;
+}
+  
+.content {
+    /* padding: 0 18px; */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+    background-color: #f1f1f1;
+
+    border-radius: 0 0 8px 8px ;
+}
+
+p {
+    font-weight: 700;
+}
+
+.insignia1 {
+    width: 50px;
+    height: 50px;
+
+    justify-self: start;
+}
+
+.insignia2 {
+    width: 50px;
+    height: 50px;
+
+    justify-self: end;
+}

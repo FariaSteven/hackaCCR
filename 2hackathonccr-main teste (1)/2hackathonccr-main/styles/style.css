@@ -1,0 +1,149 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #F7F7F7;
+    margin: 20px;
+}
+
+.navbar {
+    background-color: #A2F0FF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    padding-left: 80px;
+    padding-right: 80px;
+    text-transform: uppercase; 
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color:rgb(5, 5, 5);
+    font-weight: 600;
+}
+
+.principal-div-input {
+    margin-top: 75px;
+}
+
+.container-atividade {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-row-gap: 15px;
+}
+
+.atividades-secao-titulo {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.card-cor-secao1 {
+    background-color: #BDFEDA;
+}
+
+.card-cor-secao2 {
+    background-color: #FFE99B;
+}
+
+.card-cor-secao3 {
+    background-color: #FFA07A;
+}
+
+.card-cor-secao4 {
+    background-color: #BDFEDA;
+}
+
+.card-atividade {
+    border-radius: 5px;
+    border: 5px solid #C7D1CF;
+    height: 320px;
+    padding: 20px;
+    width: 280px;
+    text-align: -webkit-center;
+    justify-self: center;
+}
+
+.card-atividade:hover{
+    transform: perspective(500px) translate(3px, -3px);
+    transition: 0.4s;
+    box-shadow: -10px 10px 5px rgba(0, 0, 0, 0.397);
+}
+
+.frame-imagem {
+    background-color: white;
+    border-radius: 10px;
+    height: 200px;
+    width: 210px;
+}
+
+.card-titulo {
+    margin: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    z-index: 10;
+}
+
+.card-informações {
+    position: relative;
+    height: 70px;
+    width: 210px;
+    top: -134px;
+}
+
+.card-atributos {
+    text-indent: -30px;
+    margin-top: 100px;
+}
+
+.card-pontos {
+    list-style: none;
+    text-align: center;
+}
+
+.button-pontos {
+    background-color: #4286A0!important;
+    border-color:  #4286A0!important;
+    position: relative;
+    top: -60px;
+}
+
+.modal-content {
+    width: 80%;
+}
+
+.modal-header {
+    border-bottom: 0px solid #e9ecef;
+}
+
+.modal-button {
+    text-align: center;
+    margin: 20px;
+}
+
+@media screen and (min-width: 320px)
+
+
+@media screen and (min-width: 480px)
+
+
+@media screen and (min-width: 600px)
+
+
+@media screen and (min-width: 768px)
+
+
+@media screen and (min-width: 992px)
+
+
+@media screen and (min-width: 1382px)
+    .card-atividade {
+
+    }
+
+    .frame-imagem {
+
+    }
+
